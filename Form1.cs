@@ -13,13 +13,11 @@ namespace The_ScrambLearner
 
 
 
-            // correct answer moves on and add points of current value to the progress bar
 
 
 
 
 
-            // wrong answers lower the current value and deducts 1 from answerAttempt
         }
 
 
