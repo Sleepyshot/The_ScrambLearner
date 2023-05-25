@@ -78,7 +78,6 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(730, 18);
             progressBar1.TabIndex = 3;
-            progressBar1.Value = 25;
             // 
             // DescriptionLabel
             // 

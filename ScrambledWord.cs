@@ -14,7 +14,7 @@ namespace The_ScrambLearner
         public string WordScramble { get; set; }
         public string Difficulty { get; set; }
 
-        public int AttemptPoints { get; set; }
+        public float AttemptPoints { get; set; }
         
         public int NumberOfTries { get; set; }
     }

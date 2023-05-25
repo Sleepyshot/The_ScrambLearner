@@ -10,6 +10,8 @@ namespace The_ScrambLearner
         string correctAnswer;
         bool isCorrectAnswer = false;
         int currentWordIndex = 0;
+        float currentPoints = 0;
+        float originalPointValue;
         ScrambledWord currentWord;
         List<ScrambledWord> wordList;
 
@@ -21,27 +23,36 @@ namespace The_ScrambLearner
             currentWord = wordList[currentWordIndex];
             correctAnswer = currentWord.Word;
             ScrambledWordBox.Text = currentWord.WordScramble;
+            originalPointValue = currentWord.AttemptPoints;
             // end initialize all
         }
 
+
         private void button1_Click(object sender, EventArgs e) //winform event
         {
-
+            
             if (textBoxReply.Text == correctAnswer)
             {
+                
                 isCorrectAnswer = true;
                 textBoxReply.Text = "";// fresh replybox after correct answer
                 IncorrectLable.Text = "";// clear incorrect lable
-                if (isCorrectAnswer)
-                {
-                    HandleNextWord();
-                }
+                currentPoints +=  currentWord.AttemptPoints;
+                
+
+
+                HandleNextWord();
             }
             else if (textBoxReply.Text != correctAnswer)
             {
                 IncorrectLable.Text = "Incorrect";
                 // deduct points from word
+                originalPointValue = currentWord.AttemptPoints;
+                currentWord.AttemptPoints = currentWord.AttemptPoints  - (originalPointValue * 0.5f);// we are subtracting 50% from the word
+                
             }
+
+            progressBar1.Value = ((int)currentPoints);
         }
 
         void HandleNextWord()// to increment through the word in the list
@@ -52,6 +63,9 @@ namespace The_ScrambLearner
                 currentWord = wordList[currentWordIndex];
                 ScrambledWordBox.Text = currentWord.WordScramble;
                 correctAnswer = currentWord.Word;
+                currentWord.AttemptPoints = originalPointValue;
+
+
             }
             else
             {
@@ -59,6 +73,8 @@ namespace The_ScrambLearner
                 DescriptionLabel.Text = "Congradulations";
             }
         }
+
+
         // correct answer moves on and add points of current value to the progress bar
         // if playerResponse = answer
         // Gain Attempt points
