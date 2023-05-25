@@ -1,25 +1,78 @@
+using System.Diagnostics.Tracing;
+using System.Text.Json;
+
 namespace The_ScrambLearner
 {
     public partial class Form1 : Form
     {
+
+        string jsonData = File.ReadAllText("WordList.json"); // we are reading the json from our project
+        string correctAnswer;
+        bool isCorrectAnswer = false;
+        int currentWordIndex = 0;
+        ScrambledWord currentWord;
+        List<ScrambledWord> wordList;
+
         public Form1()
         {
-            InitializeComponent();
+            // start initialize all 
+            wordList = JsonSerializer.Deserialize<List<ScrambledWord>>(jsonData); // we are parsing the json to the properties of a list of objects
+            InitializeComponent();// designer
+            currentWord = wordList[currentWordIndex];
+            correctAnswer = currentWord.Word;
+            ScrambledWordBox.Text = currentWord.WordScramble;
+            // end initialize all
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e) //winform event
         {
-            //check for answer
 
-
-
-
-
-
-
-
-
+            if (textBoxReply.Text == correctAnswer)
+            {
+                isCorrectAnswer = true;
+                textBoxReply.Text = "";// fresh replybox after correct answer
+                IncorrectLable.Text = "";// clear incorrect lable
+                if (isCorrectAnswer)
+                {
+                    HandleNextWord();
+                }
+            }
+            else if (textBoxReply.Text != correctAnswer)
+            {
+                IncorrectLable.Text = "Incorrect";
+                // deduct points from word
+            }
         }
 
+        void HandleNextWord()// to increment through the word in the list
+        {
+            if (currentWordIndex < wordList.Count - 1)// -1 keeps us inside the index range
+            {
+                currentWordIndex++;
+                currentWord = wordList[currentWordIndex];
+                ScrambledWordBox.Text = currentWord.WordScramble;
+                correctAnswer = currentWord.Word;
+            }
+            else
+            {
+                ScrambledWordBox.Text = "You Win The Game"; // show points
+                DescriptionLabel.Text = "Congradulations";
+            }
+        }
+        // correct answer moves on and add points of current value to the progress bar
+        // if playerResponse = answer
+        // Gain Attempt points
+        // display the Definition
+        // Incriment the word list to provide a new word
+
+        // if playerResponse != answer
+        // Decrement the attemptPoints 
+        // Decrement numberOfTries
+        // If numberOfTries = 0 
+        // decrement lifeCounter
+        // start next word
+
+        // if lifeCOunter = 0   game over
 
     }
 }

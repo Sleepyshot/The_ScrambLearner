@@ -37,6 +37,7 @@
             CurrentLvlText = new Label();
             label2 = new Label();
             textBox1 = new TextBox();
+            IncorrectLable = new Label();
             SuspendLayout();
             // 
             // ScrambledWordBox
@@ -89,6 +90,7 @@
             DescriptionLabel.Size = new Size(514, 26);
             DescriptionLabel.TabIndex = 4;
             DescriptionLabel.Text = "Unscramble the word to move on to the next.\r\n";
+            DescriptionLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -128,11 +130,21 @@
             textBox1.TabIndex = 8;
             textBox1.Text = "Description goes here";
             // 
+            // IncorrectLable
+            // 
+            IncorrectLable.AutoSize = true;
+            IncorrectLable.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            IncorrectLable.Location = new Point(482, 143);
+            IncorrectLable.Name = "IncorrectLable";
+            IncorrectLable.Size = new Size(0, 26);
+            IncorrectLable.TabIndex = 9;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(IncorrectLable);
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(CurrentLvlText);
@@ -159,5 +171,6 @@
         private Label CurrentLvlText;
         private Label label2;
         private TextBox textBox1;
+        private Label IncorrectLable;
     }
 }

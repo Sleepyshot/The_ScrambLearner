@@ -1,0 +1,33 @@
+﻿[
+  {
+    "Word": "apple",
+    "WordScramble": "papel",
+    "Difficulty": "medium",
+    "AttemptPoints": 25,
+    "NumberOfTries": 3
+
+  },
+
+
+  {
+    "Word": "pear",
+    "WordScramble": "earp",
+    "Difficulty": "easy",
+    "AttemptPoints": 20,
+    "NumberOfTries": 3
+
+  },
+
+
+  {
+    "Word": "condition",
+    "WordScramble": "ncnditoio",
+    "Difficulty": "hard",
+    "AttemptPoints": 20,
+    "NumberOfTries": 3
+
+  }
+
+
+
+]
