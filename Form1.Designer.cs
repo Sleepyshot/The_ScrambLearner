@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ScrambledWordBox = new TextBox();
             AcceptButton = new Button();
             textBoxReply = new TextBox();
             DescriptionLabel = new Label();
-            label1 = new Label();
             CurrentLvlText = new Label();
             levelLabel = new Label();
             textBox1 = new TextBox();
@@ -40,36 +38,27 @@
             pointsLabel = new Label();
             timerLabel = new Label();
             label2 = new Label();
-            label3 = new Label();
+            livesLabel = new Label();
+            scrambledWordLabel = new Label();
+            attemptsLabel = new Label();
             SuspendLayout();
-            // 
-            // ScrambledWordBox
-            // 
-            ScrambledWordBox.Font = new Font("Showcard Gothic", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            ScrambledWordBox.Location = new Point(60, 12);
-            ScrambledWordBox.Multiline = true;
-            ScrambledWordBox.Name = "ScrambledWordBox";
-            ScrambledWordBox.Size = new Size(666, 77);
-            ScrambledWordBox.TabIndex = 0;
-            ScrambledWordBox.Text = "Scrambled Word";
-            ScrambledWordBox.TextAlign = HorizontalAlignment.Center;
             // 
             // AcceptButton
             // 
             AcceptButton.Font = new Font("Segoe UI Variable Display Semib", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            AcceptButton.Location = new Point(331, 178);
+            AcceptButton.Location = new Point(557, 63);
             AcceptButton.Name = "AcceptButton";
             AcceptButton.Size = new Size(94, 39);
             AcceptButton.TabIndex = 1;
-            AcceptButton.Text = "Accept";
+            AcceptButton.Text = "Answer";
             AcceptButton.UseVisualStyleBackColor = true;
             AcceptButton.Click += button1_Click;
             // 
             // textBoxReply
             // 
-            textBoxReply.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxReply.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBoxReply.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxReply.Location = new Point(293, 140);
+            textBoxReply.Location = new Point(509, 25);
             textBoxReply.Name = "textBoxReply";
             textBoxReply.Size = new Size(183, 32);
             textBoxReply.TabIndex = 2;
@@ -80,28 +69,19 @@
             DescriptionLabel.AutoSize = true;
             DescriptionLabel.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             DescriptionLabel.ForeColor = SystemColors.ActiveCaptionText;
-            DescriptionLabel.Location = new Point(146, 92);
+            DescriptionLabel.Location = new Point(12, 160);
             DescriptionLabel.Name = "DescriptionLabel";
-            DescriptionLabel.Size = new Size(514, 26);
+            DescriptionLabel.Size = new Size(517, 104);
             DescriptionLabel.TabIndex = 4;
-            DescriptionLabel.Text = "Unscramble the word to move on to the next.\r\n";
-            DescriptionLabel.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(201, 144);
-            label1.Name = "label1";
-            label1.Size = new Size(75, 28);
-            label1.TabIndex = 5;
-            label1.Text = "Answer";
+            DescriptionLabel.Text = "-Unscramble to gain points and move on.\r\n-Wrong answers will deduct points\r\n-The timer ending will give less points\r\n-Words have 3 attempts effected by the above ";
+            DescriptionLabel.TextAlign = ContentAlignment.MiddleLeft;
+
             // 
             // CurrentLvlText
             // 
             CurrentLvlText.AutoSize = true;
             CurrentLvlText.Font = new Font("Showcard Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            CurrentLvlText.Location = new Point(60, 217);
+            CurrentLvlText.Location = new Point(585, 203);
             CurrentLvlText.Name = "CurrentLvlText";
             CurrentLvlText.Size = new Size(69, 21);
             CurrentLvlText.TabIndex = 6;
@@ -111,19 +91,19 @@
             // 
             levelLabel.AutoSize = true;
             levelLabel.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            levelLabel.Location = new Point(578, 170);
+            levelLabel.Location = new Point(12, 96);
             levelLabel.Name = "levelLabel";
-            levelLabel.Size = new Size(82, 26);
+            levelLabel.Size = new Size(181, 26);
             levelLabel.TabIndex = 7;
-            levelLabel.Text = "Level 2";
+            levelLabel.Text = "Difficulty: Med";
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(146, 269);
+            textBox1.Location = new Point(12, 342);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(514, 143);
+            textBox1.Size = new Size(766, 106);
             textBox1.TabIndex = 8;
             textBox1.Text = "Description goes here";
             // 
@@ -140,7 +120,7 @@
             // 
             pointsLabel.AutoSize = true;
             pointsLabel.Font = new Font("Segoe UI Black", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            pointsLabel.Location = new Point(43, 170);
+            pointsLabel.Location = new Point(585, 160);
             pointsLabel.Name = "pointsLabel";
             pointsLabel.Size = new Size(107, 46);
             pointsLabel.TabIndex = 10;
@@ -160,28 +140,50 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(732, 63);
+            label2.Location = new Point(714, 63);
             label2.Name = "label2";
             label2.Size = new Size(64, 26);
             label2.TabIndex = 12;
             label2.Text = "lives";
             // 
-            // label3
+            // livesLabel
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(750, 22);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 46);
-            label3.TabIndex = 13;
-            label3.Text = "3";
+            livesLabel.AutoSize = true;
+            livesLabel.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            livesLabel.Location = new Point(724, 11);
+            livesLabel.Name = "livesLabel";
+            livesLabel.Size = new Size(38, 46);
+            livesLabel.TabIndex = 13;
+            livesLabel.Text = "3";
+            // 
+            // scrambledWordLabel
+            // 
+            scrambledWordLabel.AutoSize = true;
+            scrambledWordLabel.Font = new Font("Showcard Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            scrambledWordLabel.Location = new Point(98, 25);
+            scrambledWordLabel.Name = "scrambledWordLabel";
+            scrambledWordLabel.Size = new Size(126, 43);
+            scrambledWordLabel.TabIndex = 14;
+            scrambledWordLabel.Text = "word";
+            // 
+            // attemptsLabel
+            // 
+            attemptsLabel.AutoSize = true;
+            attemptsLabel.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            attemptsLabel.Location = new Point(219, 96);
+            attemptsLabel.Name = "attemptsLabel";
+            attemptsLabel.Size = new Size(125, 26);
+            attemptsLabel.TabIndex = 15;
+            attemptsLabel.Text = "Attempt: 3";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label3);
+            Controls.Add(attemptsLabel);
+            Controls.Add(scrambledWordLabel);
+            Controls.Add(livesLabel);
             Controls.Add(label2);
             Controls.Add(timerLabel);
             Controls.Add(pointsLabel);
@@ -189,11 +191,10 @@
             Controls.Add(textBox1);
             Controls.Add(levelLabel);
             Controls.Add(CurrentLvlText);
-            Controls.Add(label1);
             Controls.Add(DescriptionLabel);
             Controls.Add(textBoxReply);
             Controls.Add(AcceptButton);
-            Controls.Add(ScrambledWordBox);
+            MaximizeBox = false;
             Name = "Form1";
             Text = "The ScrambLearner";
             ResumeLayout(false);
@@ -201,12 +202,9 @@
         }
 
         #endregion
-
-        private TextBox ScrambledWordBox;
         private Button AcceptButton;
         private TextBox textBoxReply;
         private Label DescriptionLabel;
-        private Label label1;
         private Label CurrentLvlText;
         private Label levelLabel;
         private TextBox textBox1;
@@ -214,6 +212,8 @@
         private Label pointsLabel;
         private Label timerLabel;
         private Label label2;
-        private Label label3;
+        private Label livesLabel;
+        private Label scrambledWordLabel;
+        private Label attemptsLabel;
     }
 }

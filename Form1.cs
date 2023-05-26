@@ -11,7 +11,7 @@ namespace The_ScrambLearner
         string jsonData = File.ReadAllText("WordList.json"); // we are reading the json from our project
         string correctAnswer;
         int currentWordIndex = 0;
-        int secondsCounting = 0;
+        int secondsCounting = 45;
         int lifeCounter = 3;
         int numberOfTries;
         float currentPoints = 0;
@@ -19,7 +19,7 @@ namespace The_ScrambLearner
         ScrambledWord currentWord;
         List<ScrambledWord> wordList;
         private Timer timer;
-        
+
 
         public Form1()
         {
@@ -34,22 +34,24 @@ namespace The_ScrambLearner
             //TIMER
             currentWord = wordList[currentWordIndex];
             correctAnswer = currentWord.Word;
-            ScrambledWordBox.Text = currentWord.WordScramble;
+            scrambledWordLabel.Text = currentWord.WordScramble;
             originalPointValue = currentWord.AttemptPoints;
             pointsLabel.Text = currentPoints.ToString();
             levelLabel.Text = $"Difficulty:{currentWord.Difficulty}";
             numberOfTries = currentWord.NumberOfTries;
+            attemptsLabel.Text = $"Attempts:{numberOfTries.ToString()}";
+            livesLabel.Text = lifeCounter.ToString();
             // end initialize all
         }
         private void button1_Click(object sender, EventArgs e) //winform event
         {
-            secondsCounting = 0;
+            secondsCounting = 45;
             if (textBoxReply.Text == correctAnswer)
             {
                 textBoxReply.Text = "";// fresh replybox after correct answer
                 IncorrectLable.Text = "";// clear incorrect lable
                 currentPoints += currentWord.AttemptPoints;
-                
+
                 HandleNextWord();
             }
             else if (textBoxReply.Text != correctAnswer)
@@ -57,8 +59,12 @@ namespace The_ScrambLearner
                 IncorrectLable.Text = "Incorrect";
                 // deduct points from word
                 currentPoints = currentPoints - (originalPointValue * 0.5f);// we are subtracting 50% from the word
+                numberOfTries--;
+               
             }
             pointsLabel.Text = currentPoints.ToString();
+            attemptsLabel.Text = $"Attempts:{numberOfTries.ToString()}";
+            livesLabel.Text = lifeCounter.ToString();
 
         }
         void HandleNextWord()// to increment through the word in the list
@@ -67,33 +73,46 @@ namespace The_ScrambLearner
             {
                 currentWordIndex++;
                 currentWord = wordList[currentWordIndex];
-                ScrambledWordBox.Text = currentWord.WordScramble;
+                scrambledWordLabel.Text = currentWord.WordScramble;
                 levelLabel.Text = $"Difficulty:{currentWord.Difficulty}";
                 correctAnswer = currentWord.Word;
                 originalPointValue = currentWord.AttemptPoints;
-                secondsCounting = 0;
-                
+                secondsCounting = 45;
+                numberOfTries = 3;
             }
             else
             {
-                ScrambledWordBox.Text = "You Win The Game";
-                DescriptionLabel.Text = "Congradulations";
+                scrambledWordLabel.Text = "Game Over";
+                DescriptionLabel.Text = "Check out how many points you gained";
             }
         }
         // display the Definition
         private void Timer_Tick(object sender, EventArgs e)
         {
-            secondsCounting++;
-            if (secondsCounting == 45)
+            secondsCounting--;
+            if (secondsCounting == 0)
             {
                 currentPoints = currentPoints - (originalPointValue * 0.5f);
-                secondsCounting = 0;
+                secondsCounting = 45;
+                numberOfTries--;  
             }
-            
+            if (numberOfTries == 0)
+            {
+                lifeCounter--;
+                HandleNextWord();
+            }
+            if (lifeCounter == 0)
+            {
+                scrambledWordLabel.Text = "You have ran out of lives";
+                timer.Stop();
+            }
 
-                timerLabel.Text = secondsCounting.ToString();
+            attemptsLabel.Text = $"Attempts:{numberOfTries.ToString()}";
+            timerLabel.Text = secondsCounting.ToString();
+            livesLabel.Text = lifeCounter.ToString();
         }
-
+        
+       
 
 
         // if lifeCOunter = 0   game over
