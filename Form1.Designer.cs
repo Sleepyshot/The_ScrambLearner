@@ -31,13 +31,16 @@
             ScrambledWordBox = new TextBox();
             AcceptButton = new Button();
             textBoxReply = new TextBox();
-            progressBar1 = new ProgressBar();
             DescriptionLabel = new Label();
             label1 = new Label();
             CurrentLvlText = new Label();
-            label2 = new Label();
+            levelLabel = new Label();
             textBox1 = new TextBox();
             IncorrectLable = new Label();
+            pointsLabel = new Label();
+            timerLabel = new Label();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // ScrambledWordBox
@@ -72,13 +75,6 @@
             textBoxReply.TabIndex = 2;
             textBoxReply.TextAlign = HorizontalAlignment.Center;
             // 
-            // progressBar1
-            // 
-            progressBar1.Location = new Point(33, 418);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(730, 18);
-            progressBar1.TabIndex = 3;
-            // 
             // DescriptionLabel
             // 
             DescriptionLabel.AutoSize = true;
@@ -104,20 +100,22 @@
             // CurrentLvlText
             // 
             CurrentLvlText.AutoSize = true;
-            CurrentLvlText.Location = new Point(33, 395);
+            CurrentLvlText.Font = new Font("Showcard Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            CurrentLvlText.Location = new Point(60, 217);
             CurrentLvlText.Name = "CurrentLvlText";
-            CurrentLvlText.Size = new Size(55, 20);
+            CurrentLvlText.Size = new Size(69, 21);
             CurrentLvlText.TabIndex = 6;
-            CurrentLvlText.Text = "Level 1";
+            CurrentLvlText.Text = "Points";
             // 
-            // label2
+            // levelLabel
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(708, 395);
-            label2.Name = "label2";
-            label2.Size = new Size(55, 20);
-            label2.TabIndex = 7;
-            label2.Text = "Level 2";
+            levelLabel.AutoSize = true;
+            levelLabel.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            levelLabel.Location = new Point(578, 170);
+            levelLabel.Name = "levelLabel";
+            levelLabel.Size = new Size(82, 26);
+            levelLabel.TabIndex = 7;
+            levelLabel.Text = "Level 2";
             // 
             // textBox1
             // 
@@ -138,18 +136,61 @@
             IncorrectLable.Size = new Size(0, 26);
             IncorrectLable.TabIndex = 9;
             // 
+            // pointsLabel
+            // 
+            pointsLabel.AutoSize = true;
+            pointsLabel.Font = new Font("Segoe UI Black", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            pointsLabel.Location = new Point(43, 170);
+            pointsLabel.Name = "pointsLabel";
+            pointsLabel.Size = new Size(107, 46);
+            pointsLabel.TabIndex = 10;
+            pointsLabel.Text = "1,330";
+            // 
+            // timerLabel
+            // 
+            timerLabel.AutoSize = true;
+            timerLabel.Font = new Font("Showcard Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            timerLabel.Location = new Point(12, 33);
+            timerLabel.Name = "timerLabel";
+            timerLabel.Size = new Size(55, 43);
+            timerLabel.TabIndex = 11;
+            timerLabel.Text = "45";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(732, 63);
+            label2.Name = "label2";
+            label2.Size = new Size(64, 26);
+            label2.TabIndex = 12;
+            label2.Text = "lives";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(750, 22);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 46);
+            label3.TabIndex = 13;
+            label3.Text = "3";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(timerLabel);
+            Controls.Add(pointsLabel);
             Controls.Add(IncorrectLable);
             Controls.Add(textBox1);
-            Controls.Add(label2);
+            Controls.Add(levelLabel);
             Controls.Add(CurrentLvlText);
             Controls.Add(label1);
             Controls.Add(DescriptionLabel);
-            Controls.Add(progressBar1);
             Controls.Add(textBoxReply);
             Controls.Add(AcceptButton);
             Controls.Add(ScrambledWordBox);
@@ -164,12 +205,15 @@
         private TextBox ScrambledWordBox;
         private Button AcceptButton;
         private TextBox textBoxReply;
-        private ProgressBar progressBar1;
         private Label DescriptionLabel;
         private Label label1;
         private Label CurrentLvlText;
-        private Label label2;
+        private Label levelLabel;
         private TextBox textBox1;
         private Label IncorrectLable;
+        private Label pointsLabel;
+        private Label timerLabel;
+        private Label label2;
+        private Label label3;
     }
 }
