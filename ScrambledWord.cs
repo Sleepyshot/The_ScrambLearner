@@ -17,5 +17,7 @@ namespace The_ScrambLearner
         public float AttemptPoints { get; set; }
         
         public int NumberOfTries { get; set; }
+        public string Definition { get; set; }
+        public bool HasBeenUsed { get; set; }
     }
 }

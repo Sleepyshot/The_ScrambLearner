@@ -33,7 +33,7 @@
             DescriptionLabel = new Label();
             CurrentLvlText = new Label();
             levelLabel = new Label();
-            textBox1 = new TextBox();
+            infoTextBox = new TextBox();
             IncorrectLable = new Label();
             pointsLabel = new Label();
             timerLabel = new Label();
@@ -75,7 +75,6 @@
             DescriptionLabel.TabIndex = 4;
             DescriptionLabel.Text = "-Unscramble to gain points and move on.\r\n-Wrong answers will deduct points\r\n-The timer ending will give less points\r\n-Words have 3 attempts effected by the above ";
             DescriptionLabel.TextAlign = ContentAlignment.MiddleLeft;
-
             // 
             // CurrentLvlText
             // 
@@ -97,15 +96,15 @@
             levelLabel.TabIndex = 7;
             levelLabel.Text = "Difficulty: Med";
             // 
-            // textBox1
+            // infoTextBox
             // 
-            textBox1.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(12, 342);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(766, 106);
-            textBox1.TabIndex = 8;
-            textBox1.Text = "Description goes here";
+            infoTextBox.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            infoTextBox.Location = new Point(12, 342);
+            infoTextBox.Multiline = true;
+            infoTextBox.Name = "infoTextBox";
+            infoTextBox.Size = new Size(766, 106);
+            infoTextBox.TabIndex = 8;
+            infoTextBox.Text = "Description goes here";
             // 
             // IncorrectLable
             // 
@@ -188,7 +187,7 @@
             Controls.Add(timerLabel);
             Controls.Add(pointsLabel);
             Controls.Add(IncorrectLable);
-            Controls.Add(textBox1);
+            Controls.Add(infoTextBox);
             Controls.Add(levelLabel);
             Controls.Add(CurrentLvlText);
             Controls.Add(DescriptionLabel);
@@ -207,7 +206,7 @@
         private Label DescriptionLabel;
         private Label CurrentLvlText;
         private Label levelLabel;
-        private TextBox textBox1;
+        private TextBox infoTextBox;
         private Label IncorrectLable;
         private Label pointsLabel;
         private Label timerLabel;
