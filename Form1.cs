@@ -13,17 +13,15 @@ namespace The_ScrambLearner
         int currentWordIndex = 0;
         int secondsCounting = 45;
         int lifeCounter = 3;
+        int usedWordsCounter = 0;
         int numberOfTries;
         float currentPoints = 0;
         float originalPointValue;
         ScrambledWord currentWord;
         ScrambledWord lastWord;
         List<ScrambledWord> wordList;
-        private Timer timer;
+        Timer timer;
         Random random = new Random();
-
-
-
         public Form1()
         {
             // start initialize all
@@ -32,19 +30,20 @@ namespace The_ScrambLearner
             // TIMER
             timer = new Timer();
             timer.Interval = 1000; // Interval set to 1 second
-            timer.Tick += Timer_Tick;  
+            timer.Tick += Timer_Tick;
             //TIMER
             currentWord = wordList[0];
             correctAnswer = currentWord.Word;
             scrambledWordLabel.Text = currentWord.WordScramble;
             originalPointValue = currentWord.AttemptPoints;
-            pointsLabel.Text = currentPoints.ToString();
-            levelLabel.Text = $"Difficulty:{currentWord.Difficulty}";
             numberOfTries = currentWord.NumberOfTries;
-            attemptsLabel.Text = $"Attempts:{numberOfTries.ToString()}";
-            livesLabel.Text = lifeCounter.ToString();
-            
 
+            pointsLabel.Text = currentPoints.ToString();
+            livesLabel.Text = lifeCounter.ToString();
+
+            levelLabel.Text = "";
+            attemptsLabel.Text = "";
+            IncorrectLable.Text = "";
             // end initialize all
         }
 
@@ -75,74 +74,58 @@ namespace The_ScrambLearner
 
         void HandleNextWord()// to increment through the word in the list
         {
-            if (currentWordIndex < wordList.Count - 1)// -1 keeps us inside the index range
-            {
-                
-                 
-                int randomNumber = -1;
-                ScrambledWord newWord = null;
+            int randomNumber = -1;
+            ScrambledWord newWord = null;
 
-            while(newWord == null) 
-            {
+           while (newWord == null)
+            { 
                 if (currentPoints <= 250)
-            {
-            randomNumber = random.Next(1, 51);
-            }
-            else if (currentPoints > 250 && currentPoints <= 500)
-            {
-                randomNumber = random.Next(51, 101);
-            }
-                    // will add below when list is complete
-                    /*
-                   else if (currentPoints > 500 && currentPoints <= 750)
-                   {
-                       randomNumber = random.Next(101, 151);
-                   }
-                   else if (currentPoints > 750 && currentPoints <= 1000)
-                   {
-                       randomNumber = random.Next(151, 201);
-                   }*/
+                {
+                    randomNumber = random.Next(1, 51);
+                }
+                else if (currentPoints > 250 && currentPoints <= 500)
+                {
+                    randomNumber = random.Next(51, 101);
+                }
+               else if (currentPoints > 500 && currentPoints <= 750)
+               {
+                   randomNumber = random.Next(101, 151);
+               }
+               else if (currentPoints > 750)
+               {
+                   randomNumber = random.Next(151, 201);
+               }
 
-                    // Check if the selected word has been used before
-                    if (randomNumber != -1 && !wordList[randomNumber].HasBeenUsed)
-            {
-                newWord = wordList[randomNumber];
-            }
-        }
-
-            // Now we have a new word
-             currentWord = newWord;
-             currentWord.HasBeenUsed = true;
-                 
-                 
-
-
-
-              //  currentWordIndex++;// remove when the random word selector is active
-             //   currentWord = wordList[currentWordIndex];// remove as well
-                scrambledWordLabel.Text = currentWord.WordScramble;
-                levelLabel.Text = $"Difficulty:{currentWord.Difficulty}";
-                correctAnswer = currentWord.Word;
-                originalPointValue = currentWord.AttemptPoints;
-                secondsCounting = 45;
-                numberOfTries = 3;
-
-                infoTextBox.Text = currentWord.Definition.ToString();
+                // Check if the selected word has been used before
+                if (randomNumber != -1 && !wordList[randomNumber].HasBeenUsed)
+                {
+                    newWord = wordList[randomNumber];
+                    if (newWord.Difficulty == "insane")// should be the last diffculty like Insane
+                        usedWordsCounter++;
+                }
+               
+          }
+            // Now we have a new word thats has not been used
             
-                timer.Start();
-            }
-            else
+            currentWord = newWord;
+            currentWord.HasBeenUsed = true;// we set this to make sure the words dont get used again
+            scrambledWordLabel.Text = currentWord.WordScramble;
+            levelLabel.Text = $"Difficulty:{currentWord.Difficulty}";
+            correctAnswer = currentWord.Word;
+            originalPointValue = currentWord.AttemptPoints;
+            secondsCounting = 45;
+            numberOfTries = 3;
+            infoTextBox.Text = currentWord.Definition.ToString();
+            timer.Start();
+            if(usedWordsCounter >= 50)// the number of words in the last difficulty range likely 50
             {
-                scrambledWordLabel.Text = "Out of Words";
-                DescriptionLabel.Text = "Check out how many points you gained";
-                timer.Stop();
+                lifeCounter = 0;
             }
+           
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            
-
             secondsCounting--;
             if (secondsCounting == 0)
             {
@@ -157,13 +140,13 @@ namespace The_ScrambLearner
             }
             if (lifeCounter == 0)
             {
-                scrambledWordLabel.Text = "You have run out of lives";
+                scrambledWordLabel.Text = "The Game has ended";
                 timer.Stop();
             }
             attemptsLabel.Text = $"Attempts:{numberOfTries.ToString()}";
             timerLabel.Text = secondsCounting.ToString();
             livesLabel.Text = lifeCounter.ToString();
-            
+
         }
     }
 }

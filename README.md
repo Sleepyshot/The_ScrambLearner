@@ -3,13 +3,10 @@ Project: "Scramble Learner"
 
 Description:
 In this game, the player is presented with a jumbled word and they must unscramble it to form the
-correct word. Upon successful unscrambling, the game will display the meaning of the word along 
-with some other information on the word. The player will be rewarded with points dependening on 
-how many guesses they used. When the player reaches enough points the word difficulty increases. 
-The losing condition will be stars which will decrease for every word with 3 wrong guesses. When 
-the player loses all three stars the game will save the players max points and diplay it on the 
-leaderboard.
+correct word.The game will display a definition to help aid the player in getting the correcr The player will 
+be rewarded with points dependening on how many guesses they used. When the player reaches enough points the word 
+difficulty increases. The player has 3 attempts before they lose a life and move on to another word in the list. 
+Once the player reaches zero lives or the word list has ended the game will be over.
 
+I just wanted to create a little game to help solidify some knowledge of basic c# programming!
 
-
-I wanted to make a little word game to help with learning to program!

@@ -392,7 +392,7 @@
     "Difficulty": "easy",
     "AttemptPoints": 20,
     "NumberOfTries": 3,
-    "Definition": "A large grain plant domesticated by indigenous peoples",
+    "Definition": "A large grain plant very common to the United States",
     "HasBeenUsed": false
   },
   {
@@ -410,7 +410,7 @@
     "Difficulty": "easy",
     "AttemptPoints": 20,
     "NumberOfTries": 3,
-    "Definition": "Small spherical seed or the seed-pod of the legume",
+    "Definition": "Small green spherical seed or the seed-pod usualy eaten by people",
     "HasBeenUsed": false
   },
   {
@@ -419,7 +419,7 @@
     "Difficulty": "easy",
     "AttemptPoints": 20,
     "NumberOfTries": 3,
-    "Definition": "A flightless bird native to New Zealand, or a green fruit also known as kiwifruit",
+    "Definition": "A flightless bird native to New Zealand, or a green fuzzy fruit",
     "HasBeenUsed": false
   },
   {
@@ -897,6 +897,906 @@
     "AttemptPoints": 30,
     "NumberOfTries": 3,
     "Definition": "Richly luxurious and expensive",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "beacon",
+    "WordScramble": "aebcon",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A signaling light; a source of guidance or inspiration",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "jigsaw",
+    "WordScramble": "siwagj",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A puzzle with pieces of a picture to assemble",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "quartz",
+    "WordScramble": "tqzrua",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A common mineral found in the earth's crust",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "shrink",
+    "WordScramble": "knrish",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "To contract or reduce in size",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "vortex",
+    "WordScramble": "txeovr",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A whirling mass of fluid or air, such as a whirlpool or whirlwind",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "walrus",
+    "WordScramble": "ulswar",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A large marine mammal with tusks",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "xenial",
+    "WordScramble": "xneila",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Relating to hospitality between host and guest",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "zephyr",
+    "WordScramble": "rhepzy",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A soft, gentle breeze",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "ignite",
+    "WordScramble": "ngetii",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "To cause to start burning; to excite or inflame",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "random",
+    "WordScramble": "ndomra",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Made, done, or happening without method or conscious decision",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "source",
+    "WordScramble": "cueros",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A place, person, or thing from which something originates or can be obtained",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "strong",
+    "WordScramble": "trsngo",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Having the power to move heavy weights or perform other physically demanding tasks",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "office",
+    "WordScramble": "fceofi",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A room, set of rooms, or building used as a place for commercial, professional, or bureaucratic work",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "theory",
+    "WordScramble": "rotyeh",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A supposition or a system of ideas intended to explain something",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "design",
+    "WordScramble": "gesnid",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A plan or drawing produced to show the look and function or workings of something before it is built or made",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "prison",
+    "WordScramble": "nsipor",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A building in which people are legally held as a punishment for a crime they have committed or while awaiting trial",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "police",
+    "WordScramble": "plcioe",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "The civil force of a national or local government, responsible for the prevention and detection of crime and the maintenance of public order",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "visual",
+    "WordScramble": "lusiva",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Relating to seeing or sight",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "school",
+    "WordScramble": "loosch",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "An institution for educating",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "beyond",
+    "WordScramble": "bnoyed",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "At or to the further side of",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "energy",
+    "WordScramble": "engyer",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "The strength and vitality required for sustained physical or mental activity",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "stream",
+    "WordScramble": "mestra",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A small, narrow river",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "effect",
+    "WordScramble": "feetce",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A change that is a result or consequence of an action or other cause",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "people",
+    "WordScramble": "poeple",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Human beings in general or considered collectively",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "result",
+    "WordScramble": "tlrseu",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A consequence, effect, or outcome of something",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "forest",
+    "WordScramble": "efrost",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A large area covered chiefly with trees and undergrowth",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "motion",
+    "WordScramble": "otnimo",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "The action or process of moving or being moved",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "temple",
+    "WordScramble": "leptme",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A building devoted to the worship, or regarded as the dwelling place, of a god or gods or other objects of religious reverence",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "silver",
+    "WordScramble": "vliers",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A precious shiny grayish-white metal, the chemical element of atomic number 47",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "rocket",
+    "WordScramble": "teckor",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A cylindrical projectile that can be propelled to a great height or distance by the combustion of its contents",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "gloves",
+    "WordScramble": "glesov",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Hand coverings worn for protection against cold or dirt and typically having separate parts for each finger",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "plasma",
+    "WordScramble": "mpsala",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A fourth state of matter distinct from solid or liquid or gas and present in stars and fusion reactors",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "zebras",
+    "WordScramble": "zerbas",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Several species of African wild horses distinguished by each individual's unique black and white stripes",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "python",
+    "WordScramble": "nopthy",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A type of large constricting snake",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "aspect",
+    "WordScramble": "tacpes",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A particular part or feature of something",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "sphinx",
+    "WordScramble": "psxinh",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A mythical creature with the head of a human and the body of a lion",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "cymbal",
+    "WordScramble": "yclbma",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A musical instrument in the percussion family",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "beacon",
+    "WordScramble": "ceaonb",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A light or other visible object serving as a signal, warning, or guide",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "chisel",
+    "WordScramble": "elchsi",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A long-bladed hand tool with a beveled cutting edge used to shape wood or stone",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "groovy",
+    "WordScramble": "gyovro",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Fashionable and exciting",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "socket",
+    "WordScramble": "toscek",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A natural or artificial hole or cavity into which something fits",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "shrubs",
+    "WordScramble": "bhsurs",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A woody plant smaller than a tree, usually having multiple permanent stems branching from or near the ground",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "galaxy",
+    "WordScramble": "yxgala",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A large system of stars held together by mutual gravitation and isolated from similar systems by vast regions of space",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "prawns",
+    "WordScramble": "nwspar",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Large shrimps",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "blazer",
+    "WordScramble": "zerbal",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A type of jacket, often part of a uniform",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "flutes",
+    "WordScramble": "ufelts",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Musical instruments of the woodwind group",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "grapes",
+    "WordScramble": "gspear",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Fruit that grow in clusters on a vine, often used to make wine",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "tragic",
+    "WordScramble": "rtgaci",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "Causing or characterized by extreme distress or sorrow",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "phrase",
+    "WordScramble": "phresa",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "A small group of words standing together as a conceptual unit, typically forming a component of a clause",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "carbon",
+    "WordScramble": "borcan",
+    "Difficulty": "hard",
+    "AttemptPoints": 40,
+    "NumberOfTries": 3,
+    "Definition": "The chemical element of atomic number 6, a nonmetal that has two main forms",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "elephants",
+    "WordScramble": "tselephan",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Large mammals with long trunks, native to Africa and parts of Asia",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "observing",
+    "WordScramble": "gervinobs",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Noticing or perceiving something and registering it as being significant",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "statement",
+    "WordScramble": "ementstat",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A definite or clear expression of something in speech or writing",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "unfolding",
+    "WordScramble": "dingfunol",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Opening or spreading out from a folded position",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "mysterious",
+    "WordScramble": "serymouti",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Difficult or impossible to understand, explain, or identify",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "beautiful",
+    "WordScramble": "utifelba",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Pleasing the senses or mind aesthetically",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "discovery",
+    "WordScramble": "syovercid",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The action or process of discovering or being discovered",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "nightmare",
+    "WordScramble": "htnigare",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A frightening or unpleasant dream",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "solutions",
+    "WordScramble": "tionlouss",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A means of solving a problem or dealing with a difficult situation",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "creatures",
+    "WordScramble": "eaturcsre",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "An animal or being, as opposed to a human",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "butterfly",
+    "WordScramble": "tflybuter",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "An insect with two pairs of large wings that are covered with tiny scales, usually brightly colored",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "celebrate",
+    "WordScramble": "atelebrec",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "To mark an occasion with festivities or other deviations from routine",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "adventure",
+    "WordScramble": "etureadnv",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "An unusual and exciting or daring experience",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "important",
+    "WordScramble": "rtimopant",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Of great significance or value",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "unexpected",
+    "WordScramble": "pexctedun",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Not expected or anticipated",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "difficult",
+    "WordScramble": "ficuldift",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Needing much effort or skill to accomplish, deal with, or understand",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "exercises",
+    "WordScramble": "recisxese",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Activity requiring physical effort, carried out to sustain or improve health and fitness",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "dandelion",
+    "WordScramble": "lindaoden",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A widely distributed weed of the daisy family",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "cavaliers",
+    "WordScramble": "avlseriac",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A supporter of King Charles I in the English Civil War",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "sunflowers",
+    "WordScramble": "snufwersol",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A tall North American plant of the daisy family",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "admirable",
+    "WordScramble": "admirbale",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Deserving respect or approval",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "astronomy",
+    "WordScramble": "yamonsrta",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The study of celestial bodies",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "delicious",
+    "WordScramble": "deiiclsuo",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Highly pleasant to the taste",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "economics",
+    "WordScramble": "snomocie",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The branch of knowledge concerned with the production, consumption, and transfer of wealth",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "challenge",
+    "WordScramble": "ellehganc",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A call to take part in a contest or competition",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "fireworks",
+    "WordScramble": "werkforsi",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A device containing gunpowder and other combustible chemicals that cause a spectacular explosion when ignited",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "gratitude",
+    "WordScramble": "deattirug",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The quality of being thankful",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "homeworks",
+    "WordScramble": "owrhemoks",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Schoolwork that a student is required to do at home",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "interview",
+    "WordScramble": "iwternvie",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A meeting of people face to face, especially for consultation",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "jubilation",
+    "WordScramble": "ijlaubton",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A feeling of great happiness and triumph",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "knowledge",
+    "WordScramble": "degenolwk",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Facts, information, and skills acquired by a person through experience or education",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "landscape",
+    "WordScramble": "scladenap",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "All the visible features of an area of countryside or land, often considered in terms of their aesthetic appeal",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "magnificent",
+    "WordScramble": "ntgmifecan",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Extremely beautiful, elaborate, or impressive",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "nightmares",
+    "WordScramble": "mrnigthesa",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A frightening or unpleasant dream",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "obligation",
+    "WordScramble": "olbgtiano",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "An act or course of action to which a person is morally or legally bound",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "parliament",
+    "WordScramble": "rampleinta",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The highest legislature, consisting of the sovereign, the House of Lords, and the House of Commons",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "qualities",
+    "WordScramble": "alutiseq",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The standard of something as measured against other things of a similar kind; the degree of excellence of something",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "resources",
+    "WordScramble": "roseruces",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A stock or supply of money, materials, staff, and other assets that can be drawn on by a person or organization in order to function effectively",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "sustainable",
+    "WordScramble": "atnsuablesi",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Capable of being maintained at a steady level without exhausting natural resources or causing severe ecological damage",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "unbelievable",
+    "WordScramble": "blieaunvbel",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Beyond belief or understanding",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "vegetarian",
+    "WordScramble": "getarianve",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A person who does not eat meat, and sometimes other animal products, especially for moral, religious, or health reasons",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "waterproof",
+    "WordScramble": "ofwaterorp",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Impervious to water",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "xenophobia",
+    "WordScramble": "obxenaphoi",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Dislike of or prejudice against people from other countries",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "youthfulness",
+    "WordScramble": "fulyouthness",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The quality or state of being young",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "zoological",
+    "WordScramble": "ologicalzo",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Concerning the study of animals and their classification and properties",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "automobile",
+    "WordScramble": "ilemobauto",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A road vehicle, typically with four wheels, powered by an internal combustion engine or electric motor and able to carry a small number of people",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "background",
+    "WordScramble": "dbackground",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The area or scenery behind the main object of contemplation, especially when perceived as a framework for it",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "calculations",
+    "WordScramble": "lculationsca",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "A mathematical determination of the size or number of something",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "difficulties",
+    "WordScramble": "esdifficulti",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "The state or condition of being difficult",
+    "HasBeenUsed": false
+  },
+  {
+    "Word": "enthusiastic",
+    "WordScramble": "icenthusiast",
+    "Difficulty": "insane",
+    "AttemptPoints": 50,
+    "NumberOfTries": 3,
+    "Definition": "Having or showing intense and eager enjoyment, interest, or approval",
     "HasBeenUsed": false
   }
 ]

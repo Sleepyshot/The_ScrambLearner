@@ -46,7 +46,7 @@
             // AcceptButton
             // 
             AcceptButton.Font = new Font("Segoe UI Variable Display Semib", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            AcceptButton.Location = new Point(557, 63);
+            AcceptButton.Location = new Point(586, 67);
             AcceptButton.Name = "AcceptButton";
             AcceptButton.Size = new Size(94, 39);
             AcceptButton.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             textBoxReply.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBoxReply.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxReply.Location = new Point(509, 25);
+            textBoxReply.Location = new Point(538, 29);
             textBoxReply.Name = "textBoxReply";
             textBoxReply.Size = new Size(183, 32);
             textBoxReply.TabIndex = 2;
@@ -69,7 +69,7 @@
             DescriptionLabel.AutoSize = true;
             DescriptionLabel.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             DescriptionLabel.ForeColor = SystemColors.ActiveCaptionText;
-            DescriptionLabel.Location = new Point(12, 160);
+            DescriptionLabel.Location = new Point(41, 164);
             DescriptionLabel.Name = "DescriptionLabel";
             DescriptionLabel.Size = new Size(517, 104);
             DescriptionLabel.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             CurrentLvlText.AutoSize = true;
             CurrentLvlText.Font = new Font("Showcard Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            CurrentLvlText.Location = new Point(585, 203);
+            CurrentLvlText.Location = new Point(614, 207);
             CurrentLvlText.Name = "CurrentLvlText";
             CurrentLvlText.Size = new Size(69, 21);
             CurrentLvlText.TabIndex = 6;
@@ -90,7 +90,7 @@
             // 
             levelLabel.AutoSize = true;
             levelLabel.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            levelLabel.Location = new Point(12, 96);
+            levelLabel.Location = new Point(41, 100);
             levelLabel.Name = "levelLabel";
             levelLabel.Size = new Size(181, 26);
             levelLabel.TabIndex = 7;
@@ -99,27 +99,28 @@
             // infoTextBox
             // 
             infoTextBox.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            infoTextBox.Location = new Point(12, 342);
+            infoTextBox.Location = new Point(22, 332);
             infoTextBox.Multiline = true;
             infoTextBox.Name = "infoTextBox";
             infoTextBox.Size = new Size(766, 106);
             infoTextBox.TabIndex = 8;
-            infoTextBox.Text = "Description goes here";
+            infoTextBox.Text = "Word hints / definitions go here";
             // 
             // IncorrectLable
             // 
             IncorrectLable.AutoSize = true;
             IncorrectLable.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            IncorrectLable.Location = new Point(482, 143);
+            IncorrectLable.Location = new Point(457, 73);
             IncorrectLable.Name = "IncorrectLable";
-            IncorrectLable.Size = new Size(0, 26);
+            IncorrectLable.Size = new Size(123, 26);
             IncorrectLable.TabIndex = 9;
+            IncorrectLable.Text = "Incorrect";
             // 
             // pointsLabel
             // 
             pointsLabel.AutoSize = true;
             pointsLabel.Font = new Font("Segoe UI Black", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            pointsLabel.Location = new Point(585, 160);
+            pointsLabel.Location = new Point(614, 164);
             pointsLabel.Name = "pointsLabel";
             pointsLabel.Size = new Size(107, 46);
             pointsLabel.TabIndex = 10;
@@ -129,7 +130,7 @@
             // 
             timerLabel.AutoSize = true;
             timerLabel.Font = new Font("Showcard Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            timerLabel.Location = new Point(12, 33);
+            timerLabel.Location = new Point(41, 37);
             timerLabel.Name = "timerLabel";
             timerLabel.Size = new Size(55, 43);
             timerLabel.TabIndex = 11;
@@ -139,7 +140,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(714, 63);
+            label2.Location = new Point(724, 61);
             label2.Name = "label2";
             label2.Size = new Size(64, 26);
             label2.TabIndex = 12;
@@ -149,7 +150,7 @@
             // 
             livesLabel.AutoSize = true;
             livesLabel.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            livesLabel.Location = new Point(724, 11);
+            livesLabel.Location = new Point(737, 15);
             livesLabel.Name = "livesLabel";
             livesLabel.Size = new Size(38, 46);
             livesLabel.TabIndex = 13;
@@ -159,7 +160,7 @@
             // 
             scrambledWordLabel.AutoSize = true;
             scrambledWordLabel.Font = new Font("Showcard Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            scrambledWordLabel.Location = new Point(98, 25);
+            scrambledWordLabel.Location = new Point(127, 29);
             scrambledWordLabel.Name = "scrambledWordLabel";
             scrambledWordLabel.Size = new Size(126, 43);
             scrambledWordLabel.TabIndex = 14;
@@ -169,7 +170,7 @@
             // 
             attemptsLabel.AutoSize = true;
             attemptsLabel.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            attemptsLabel.Location = new Point(219, 96);
+            attemptsLabel.Location = new Point(248, 100);
             attemptsLabel.Name = "attemptsLabel";
             attemptsLabel.Size = new Size(125, 26);
             attemptsLabel.TabIndex = 15;
